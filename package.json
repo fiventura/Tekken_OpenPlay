@@ -1,0 +1,14 @@
+{
+  "name": "tekken-open-play-queue",
+  "version": "1.0.0",
+  "description": "Live queue, tables and leaderboard for Tekken open play. No dependencies.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "private": true
+}

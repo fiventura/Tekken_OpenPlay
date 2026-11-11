@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: tekken-open-play
+    runtime: node
+    plan: free
+    buildCommand: echo "no build step"
+    startCommand: node server.js
+    healthCheckPath: /healthz
+    envVars:
+      - key: ADMIN_PIN
+        sync: false
