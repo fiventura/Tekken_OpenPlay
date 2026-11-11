@@ -13,7 +13,7 @@ const crypto = require('crypto');
 const PORT = Number(process.env.PORT) || 3000;
 const DATA_DIR = process.env.DATA_DIR || path.join(__dirname, 'data');
 const STATE_FILE = path.join(DATA_DIR, 'state.json');
-const INDEX = path.join(__dirname, 'public', 'index.html');
+const INDEX = [path.join(__dirname, 'public', 'index.html'), path.join(__dirname, 'index.html')].find(fs.existsSync);
 
 let PIN = process.env.ADMIN_PIN;
 if (!PIN) {
